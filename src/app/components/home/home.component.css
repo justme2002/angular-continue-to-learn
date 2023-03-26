@@ -1,0 +1,23 @@
+.home-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+li {
+  padding: 10px
+}
+
+.side-bar {
+  list-style: none;
+  width: 200px;
+}
+
+.feed-container {
+  width: 100%;
+  height: 500px;
+  border: 1px black solid;
+  overflow-y: auto;
+}
+
+

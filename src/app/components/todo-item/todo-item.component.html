@@ -1,0 +1,11 @@
+<div [ngClass]="'todo-box'" *ngFor="let todo of todos">
+  <div>
+    <span>
+      <input [defaultChecked]="todo.completed" type="checkbox" name="" id="" (change)="handleCheckedTodo(todo.id)">
+      <li [ngClass]="['todo-text-color', todo.completed ? 'line-through-todo' : '']">{{ todo.title }}</li>
+    </span>
+  </div>
+  <div>
+    <button [ngClass]="'delete-button'" (click)="deleteTodo(todo.id)">Delete</button>
+  </div>
+</div>

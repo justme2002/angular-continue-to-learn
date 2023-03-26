@@ -1,0 +1,18 @@
+<div [className]="'home-container'">
+  <div [className]="'side-bar'">
+    <h1>side bar</h1>
+    <div>
+      <li>
+        <a [routerLink]="['new-feed']">new feed</a>
+      </li>
+      <li>
+        <a [routerLink]="['todos']">todos</a>
+      </li>
+      <li>videos</li>
+      <li>marketplace</li>
+    </div>
+  </div>
+  <div [className]="'feed-container'">
+    <router-outlet></router-outlet>
+  </div>
+</div>
