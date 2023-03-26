@@ -1,0 +1,12 @@
+<h1>Customer 2 ways binding</h1>
+<input 
+  placeholder="change"
+  type="text" 
+  value=""
+  [ngModel]="count"
+  (ngModelChange)="increment($event)"
+  >
+<p>{{ count }}</p>
+<button (click)="submit()">submit</button>
+<app-customer-list [customerList]="customerList"></app-customer-list>
+<p>{{ countInParent }}</p>
